@@ -1,0 +1,31 @@
+﻿@model WeatherForToday.Models.LocationModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="panel-heading text-center">
+        <h1>Weather Information</h1>
+        <h3>Enter Location ID</h3>
+
+        <form class="p-a-1" method="POST" asp-action="WeatherResult">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="LocationKey">Your Location Id</label>
+                <input asp-for="LocationKey" />
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\bin\Debug\netstandard2.0\WeatherLib.deps.json
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\bin\Debug\netstandard2.0\WeatherLib.dll
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\bin\Debug\netstandard2.0\WeatherLib.pdb
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.csprojAssemblyReference.cache
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.csproj.CoreCompileInputs.cache
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.AssemblyInfoInputs.cache
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.AssemblyInfo.cs
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.dll
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherLib\obj\Debug\netstandard2.0\WeatherLib.pdb
