@@ -1,4 +1,5 @@
-﻿@model WeatherForToday.ViewModels.SelectRegion
+﻿
+@model WeatherForToday.ViewModels.CountryViewModel
 
 @{
     Layout = null;
@@ -15,21 +16,18 @@
 <body>
     <div class="panel-heading text-center">
         <h1>Weather Information</h1>
-        <h2>Select Region</h2>
+        <h2>Select Country</h2>
 
-
-        <form class="p-a-1" asp-action="SelectCountry" method="post">
+        <h3>@ViewBag.sr</h3>
+        <form class="p-a-1" asp-action="SelectCity" method="post">
             <div>
-                <select asp-for="Region" asp-items="Model.AllRegions"> </select>
+                <select asp-for="Country" asp-items="Model.CountryList"> </select>
             </div>
             <div>
-            <br /><button class="btn btn-primary" type="submit">Select Region</button>
+                <br /><button class="btn btn-primary" type="submit">Select Country</button>
             </div>
         </form>
 
-
-
     </div>
-
 </body>
 </html>

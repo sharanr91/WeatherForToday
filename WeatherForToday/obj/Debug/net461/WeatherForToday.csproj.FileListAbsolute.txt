@@ -352,3 +352,6 @@ C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net
 C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\bin\Debug\net461\System.Net.Http.Formatting.dll
 C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net461\Razor\Views\Home\WeatherResult.g.cshtml.cs
 C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net461\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net461\Razor\Views\Home\SelectCountry.g.cshtml.cs
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net461\Razor\Views\Home\CitySearch.g.cshtml.cs
+C:\Users\sharan\Documents\Projects\WeatherForToday\WeatherForToday\obj\Debug\net461\Razor\Views\Home\SelectCity.g.cshtml.cs

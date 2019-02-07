@@ -1,0 +1,35 @@
+﻿@model WeatherForToday.Models.CitySearchModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>City Search</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+
+    <div class="panel-heading text-center">
+        <h1>Weather Information</h1>
+        <h2>Enter City Name</h2>
+
+        <form class="p-a-1" method="POST" asp-action="CitySearchResults">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="SearchString">Enter City Name</label>
+                <input asp-for="SearchString" />
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>

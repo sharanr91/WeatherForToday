@@ -8,18 +8,28 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>WeatherResult</title>
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
-    <h1>Weather Information</h1>
-    <h3> @ViewBag.result </h3>
-    <h2> Temperature in C : @Model.Temperature.Metric.Value</h2>
-    <ul>
-        <li>Local Observation Time  @Model.LocalObservationDateTime</li>
-        <li>Weather : @Model.WeatherText</li>
-        <li>Is Day Time : @Model.IsDayTime</li>
-        <li>Temperature in C : @Model.Temperature.Metric.Value</li>
-        <li>Weather Icon : @Model.WeatherIcon</li>
-    </ul>
+    <div class="panel-heading text-center">
+        <h1>Weather Information</h1>
+
+        <h2> Temperature in C : @Model.Temperature.Metric.Value</h2>
+        <ul>
+            <li>Local Observation Time  @Model.LocalObservationDateTime</li>
+            <li>Weather : @Model.WeatherText</li>
+            <li>Is Day Time : @Model.IsDayTime</li>
+            <li>Temperature in C : @Model.Temperature.Metric.Value</li>
+        </ul>
+
+
+        <p>click here to do another search </p>
+        <a class="btn btn-primary" asp-action="Index">New Search</a>
+
+    </div>
+
+
+
 </body>
 </html>

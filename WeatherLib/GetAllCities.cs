@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -7,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace WeatherLib
 {
-    public class GetWeatherData
+    public class GetAllCities
     {
-
-        public static async Task<string> LoadWeatherData(string locationKey)
+        public static async Task<string> LoadAllCitiesData()
         {
-            string url = $"http://dataservice.accuweather.com/currentconditions/v1/{ locationKey }?apikey=KAsv18xGJd2pRClNCSKaDLR4NOx9HCPM";
-
+            string url = $"http://dataservice.accuweather.com/locations/v1/topcities/150?apikey=KAsv18xGJd2pRClNCSKaDLR4NOx9HCPM";
 
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
@@ -21,7 +18,7 @@ namespace WeatherLib
                 {
                     var result = await response.Content.ReadAsStringAsync();
                     return result;
-                    
+
 
 
                     //WeatherInfoModel weatherInfo = await response.Content.ReadAsAsync<WeatherInfoModel>();

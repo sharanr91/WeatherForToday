@@ -1,0 +1,33 @@
+﻿
+@model WeatherForToday.ViewModels.CityViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Select City</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+
+    <div class="panel-heading text-center">
+        <h1>Weather Information</h1>
+        <h2>Select City</h2>
+        <form class="p-a-1" asp-action="WeatherResult" method="post">
+            <select asp-for="CityId" asp-items="Model.CitiesList"> </select>
+            <br /><button class="btn btn-primary" type="submit">Select City</button>
+        </form>
+
+        <p>If you dont find your city in the above drop down list. Click below to navigate to city search</p>
+        <form class="p-a-1" method="POST" asp-action="CitySearch">
+            <button class="btn btn-primary" type="submit">City Search</button>
+        </form>
+
+    </div>
+</body>
+</html>
